@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class matrix
+public class matrix_multiplication
 {
 	int[][] read(int r,int c)
 	{
@@ -45,7 +45,7 @@ public class matrix
 			System.out.println("Invalid order for matrix multiplication");
 		else
 		{
-			matrix ob = new matrix();
+			matrix_multiplication ob = new matrix_multiplication();
 			System.out.println("Enter the elements in first matrix");
 			int [][] m1 = ob.read(r1,c1);
 			System.out.println("Enter the elements in second matrix");
