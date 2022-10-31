@@ -1,7 +1,7 @@
 # Sample java programs for beginners
 
 
-'''java
+'''Java
 public class Hello
 {
   public static void main(String args[])
