@@ -31,7 +31,6 @@ class Engineer extends Employee
 		System.out.println("Name of the class is Engineer");
 	}
 }
-
 public class Single_inheritance
 {
 	public static void main(String args[])
