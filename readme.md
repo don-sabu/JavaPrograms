@@ -1,1 +1,12 @@
-#Sample java programs for beginners
+# Sample java programs for beginners
+
+
+'''java
+public class Hello
+{
+  public static void main(String args[])
+  {
+    System.out.println("Hello World");
+  }
+}
+'''
