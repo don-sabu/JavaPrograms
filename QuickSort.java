@@ -1,16 +1,15 @@
-package exception_handling;
 import java.util.*;
 public class QuickSort 
 {
-	static int partition(int arr[],int lb,int ub)
+	static int partition(String arr[],int lb,int ub)
 	{
-		int temp;
+		String temp;
 		int pivot=lb,start=lb,end=ub;
 		while(start<end)
 		{
-			while(arr[start]<arr[pivot])
+			while(arr[start].compareTo(arr[pivot])<0)
 				start++;
-			while(arr[end]>arr[pivot])
+			while(arr[end].compareTo(arr[pivot])>0)
 				end--;
 			if(start<end)
 			{
@@ -24,7 +23,7 @@ public class QuickSort
 		arr[pivot]=temp;
 		return(end);
 	}
-	static void sort(int arr[],int lb,int ub)
+	static void sort(String arr[],int lb,int ub)
 	{
 		if(lb<ub)
 		{
@@ -36,21 +35,16 @@ public class QuickSort
 	public static void main(String[] args) 
 	{	
 		Scanner in=new Scanner(System.in);
-		System.out.print("Enter size of array: ");
+		System.out.print("Enter the number of names: ");
 		int n=in.nextInt();
-		int arr[]=new int[n];
-		System.out.println("Enter array elements:");
+		String names[] = new String[n];
+		System.out.println("Enter "+n+" names.");
 		for(int i=0;i<n;i++)
-			arr[i]=in.nextInt();
-		System.out.println("Array before sorting: ");
+			names[i] = in.next();
+		sort(names,0,n-1);
+		System.out.println("Sorted names: ");
 		for(int i=0;i<n;i++)
-			System.out.print(arr[i]+"\t");
-		System.out.println();
-		sort(arr,0,n-1);
-		System.out.println("Array after sorting: ");
-		for(int i=0;i<n;i++)
-			System.out.print(arr[i]+"\t");
+			System.out.println(names[i]);
 		System.out.println();
 	}
-
 }
