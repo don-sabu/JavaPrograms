@@ -29,7 +29,7 @@ public class Calculator extends JFrame implements ActionListener
 		JButton bd = new JButton("/");
 		JButton be = new JButton("=");
 		JButton bc = new JButton("C");
-		 t.setBounds(20,20,290,40);
+		t.setBounds(20,20,290,40);
 		b0.setBounds(20,250,110,50);
 		b1.setBounds(20,190,50,50);
 		b2.setBounds(80,190,50,50);
